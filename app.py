@@ -36,7 +36,7 @@ page_bg = """
   color: white;
 }
 h2, span, div[data-testid="stSidebar"] > div {
-  color: #00eaff !important;
+  color: #ffffff !important;
   font-weight: bold;
 }
 .stButton > button {
@@ -279,4 +279,5 @@ if not drone_enabled or drone_data_option == "No Drone Data":
             st.image(nasa_url, caption="Aerosol Satellite Map with Labels", use_container_width=True)
         with col2:
             st.subheader("City Map")
+
             st.map(pd.DataFrame({'lat': [lat], 'lon': [lon]}))
