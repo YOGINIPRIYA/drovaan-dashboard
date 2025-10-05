@@ -2,8 +2,8 @@
 base="light"
 
 [theme.sidebar]
-primaryColor = "#ffffff"
 backgroundColor="#080c0cff"          # Your preferred sidebar color (modify if you want)
 secondaryBackgroundColor="#070e06ff" # For sidebar widget backgrounds
 textColor="#ffffff"                # Main sidebar text color (e.g., black for readability)
+
 
