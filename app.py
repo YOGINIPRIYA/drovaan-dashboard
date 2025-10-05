@@ -72,7 +72,7 @@ prediction_time = st.sidebar.time_input(
     "Select Prediction Time (UTC)", value=datetime.time(hour=12, minute=0), key="prediction_time"
 )
 
-drone_enabled = st.sidebar.checkbox("Enable Drone Data", value=False, key="drone_enabled")
+drone_enabled = st.sidebar.checkbox("Enable Drone Data", textColor="#ffffff" value=False, key="drone_enabled")
 if drone_enabled:
     drone_data_option = st.sidebar.selectbox("Drone Data", ["Conditions", "Data History"], index=0, key="drone_data_option")
 else:
@@ -281,3 +281,4 @@ if not drone_enabled or drone_data_option == "No Drone Data":
             st.subheader("City Map")
 
             st.map(pd.DataFrame({'lat': [lat], 'lon': [lon]}))
+
